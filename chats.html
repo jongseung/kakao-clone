@@ -11,18 +11,14 @@
    <header>
        <div class="header__top">
             <div class="header__colum">
-                <!-- Plane icon-->
                 <i class="fas fa-plane"></i>
-                <!-- wifi icon-->
                 <i class="fas fa-wifi"></i>
             </div>
            <div class="header__colum">
                 <span class="header__time">18:38</span>
            </div>
            <div class="header__colum">
-            <!-- moon icon-->
             <i class="fas fa-moon"></i>
-            <!-- blue icon-->
             <i class="fab fa-bluetooth-b"></i>
             <span class="haeder__battery">66%<i class="fas fa-battery-three-quarters"></i><!-- Battery icon--></span>
             </div>
@@ -34,6 +30,57 @@
            <div class="header__column"></div>
                 <span class="header__text">Chats <i class="fa fa-caret-down"></i></span>
        </div>
-   </header> 
+   </header>
+   <main class="chats">
+        <div class="search-bar">
+            <i class="fas fa-search"></i><!-- 나중에 css로 가다듬기-->
+            <input type="text" placeholder="Find friends, chats, Plus Friends">
+        </div>
+        <ul class="chats__list">
+            <li class="chats__chat">
+                <div class="chat__content"></div>
+                    <img src="images/avatar.jpg">
+                    <div calss="chat__preview">
+                        <h3 class="chat__user">Haeun</h3>
+                        <span class="chat__last-message">Hello! This is a test message.</span>
+                    </div>
+                <span class="chat__data_time">
+                    15:55
+                </span>
+            </li>
+            <li class="chats__chat">
+                    <div class="chat__content"></div>
+                        <img src="images/avatar.jpg">
+                        <div calss="chat__preview">
+                            <h3 class="chat__user">KakaoTalk</h3>
+                            <span class="chat__last-message">[KakaoTalk Pc] You logged into KaKaoTalk PC from th PC</span>
+                        </div>
+                    <span class="chat__data_time">
+                        Sep 25
+                    </span>
+                </li>
+        </ul>
+        <div class="chat-btn">
+            <i class="fas fa-comment"></i>
+        </div>
+   </main>
+   <nav class="tab-bar">
+       <a href="index.html" class="tab-bar__tab">
+           <i class="fa fa-user"></i>
+           <span class="tab-bar__title">Friends</span>
+       </a>
+       <a href="chats.html" class="tab-bar__tab tab-bar__tab--selected">
+           <i class="fa fa-comment"></i>
+           <span class="tab-bar__title">Chats</span>
+       </a>
+       <a href="find.html" class="tab-bar__tab">
+           <i class="fa fa-search"></i>
+           <span class="tab-bar__title">Find</span>
+       </a>
+       <a href="more.html" class="tab-bar__tab">
+           <i class="fa fa-ellipsis-h"></i>
+           <span class="tab-bar__title">More</span>
+       </a>
+   </nav>
 </body>
 </html>
