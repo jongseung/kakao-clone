@@ -1,0 +1,67 @@
+.top-header--transparent{
+    background-color: transparent;
+}
+
+.profile .profile__header {
+    height: 80vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV-U7A9Hutsey3fzmvXWGlBCHADqpDrCXE5AGWiAYoRzQ6yxxP);
+    background-size: 50%;
+    width: 100%;
+    position: relative;
+    top: -60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;  
+}
+
+.profile__header .profile__header-container{
+    text-align: center;
+    position: relative; 
+    /*relative의 뜻은 상-하-좌-우 움직일 수 있게 해준다는 뜻이다. */
+    bottom: -60px;
+}
+
+.profile__header-container img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile .profile__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile__container input {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.profile__actions{
+    display: flex;
+}
+
+.profile__action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    /*cursor : not-allowed 커서가 엑스표시 됨*/
+}
+
+.profile__action-circle{
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 50%;
+    color: #523737;
+    margin-bottom: 15px;
+}
+
+.profile__action-titile{
+    font-size: 12px;
+    font-weight: 600;
+}
